@@ -11,6 +11,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @include respond(media-sm) {
+        font-size: 30%;
+    }
 }
 
 body {
@@ -21,6 +25,11 @@ body {
     color: $grey;
     line-height: 1.7;
     padding: 3rem;
+
+
+    @include respond(media-sm) {
+        padding: 0;
+    }
 }
 
 ::-webkit-scrollbar {

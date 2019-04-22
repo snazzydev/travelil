@@ -1,23 +1,17 @@
 .heading-box {
-    @include absCentering;
-
-    top: 35vh;
-    left: 25vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-
 .primary-heading {
-    text-transform: uppercase;
-    text-align: left;
+    position: relative;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    position: relative;
-
-    // *testing 
-    // border: 1px solid red;
-
+    text-transform: uppercase;
 
     &--main {
         font-weight: 400;
@@ -32,13 +26,12 @@
     }
 
     &--sub {
-        position: absolute;
-        top: 7.5rem;
+        position: relative;
+        top: -1rem;
         left: -2rem;
         display: inline-block;
         font-family: 'Montserrat', sans-serif;
         font-size: 6rem;
-        font-weight: 600;
         color: $dirty-white;
         letter-spacing: 1.5px;
         padding: 1rem 4rem;
@@ -46,7 +39,6 @@
         text-shadow: 0 0 .7rem $shadow-6;
         background-image: $green-gradient;
         border-radius: 1rem;
-
 
         &::before {
             content: "";
@@ -58,14 +50,9 @@
             left: 2rem;
             // z-index: 1;
             // border: 1px dashed red;
-            background-image: $green-gradient;
+            background-image: inherit;
             z-index: -1;
             border-radius: 1rem;
         }
-
-
-        // *testing
-        // border: 2px solid deepskyblue;
     }
-
 }

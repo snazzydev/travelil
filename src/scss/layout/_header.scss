@@ -3,13 +3,13 @@
     height: 95vh;
     background-image:
         linear-gradient(to right bottom,
-        rgba($color-green-1, .3),
-        rgba($color-green-2, .7)),
+        rgba($color-green-1, .7),
+        rgba($color-green-2, .1)),
         url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
-
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    @include flexCenter;
 }
 
 .logo-box {
