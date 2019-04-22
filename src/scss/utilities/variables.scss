@@ -1,0 +1,33 @@
+// COLORS
+$white: #fff;
+$black: #000;
+$grey: #777;
+$dirty-white: #f4f4f4;
+$light-grey: #F9F8F8;
+$light-grey-1: #D5D5D5;
+$dark-grey: #29323c;
+$grey-text: #646464;
+$text: #4e4a67;
+
+// PALLETTE
+$color-green-1: #43e97b;
+$color-green-2: #96e6a1;
+
+$color-orange-1: #f6d365;
+$color-orange-2: #fda085;
+
+// SHADOWS
+$shadow-1: rgba(0, 0, 0, 0.1);
+$shadow-2: rgba(0, 0, 0, 0.2);
+$shadow-4: rgba(0, 0, 0, 0.4);
+$shadow-6: rgba(0, 0, 0, 0.6);
+$shadow-8: rgba(0, 0, 0, 0.8);
+
+// FONTS
+$default-text-size: 1.6rem;
+
+
+// GRADIENTS
+$green-gradient: linear-gradient(to right bottom,
+rgba($color-green-1, 1),
+rgba($color-green-2, 1));

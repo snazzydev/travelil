@@ -1,0 +1,41 @@
+// BOOTSTRAP BREAKPOINTS
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==media-sm {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==media-md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==media-lg {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==media-xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+// FLEXBOX CENTERING
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absCentering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
