@@ -76,7 +76,7 @@
 .secondary-heading {
     position: relative;
     display: inline-block;
-    font-size: 6rem;
+    font-size: 4rem;
     font-family: 'NGBoldItalic', sans-serif;
     color: $white;
     text-shadow: 0 0 1rem $shadow-2;
@@ -84,12 +84,17 @@
     background-image: $green-gradient;
     box-shadow: 0 1rem 2rem $shadow-2;
     border-radius: 3px;
+
+    &--orange {
+        background-image: $orange-gradient;
+    }
 }
 
 .tertiary-heading {
     font-family: 'NGRegular', sans-serif;
     text-transform: uppercase;
 }
+
 
 .paragraph {
     text-align: justify;
