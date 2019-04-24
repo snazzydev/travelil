@@ -1,3 +1,5 @@
+// Margin Bottom
+
 .u-margin-botom-2 {
     margin-bottom: 2rem;
 }
@@ -18,7 +20,21 @@
     margin-bottom: 10rem;
 }
 
+// Padding
+
+.p-r-3 {
+    padding-right: 3rem;
+}
+
+
+// Bootstrap Container
 
 .bs-no-padding {
     padding: 0;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    border: 2px dashed deepskyblue;
 }

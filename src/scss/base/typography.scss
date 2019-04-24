@@ -1,3 +1,21 @@
+// FONTS
+@font-face {
+    font-family: "NGBoldItalic";
+    src: url("../fonts/NiveauGroteskBold-Italic.otf");
+}
+
+@font-face {
+    font-family: "NGBold";
+    src: url("../fonts/NiveauGroteskBold.otf");
+}
+
+@font-face {
+    font-family: "NGRegular";
+    src: url("../fonts/NiveauGroteskRegular.otf");
+}
+
+
+
 .heading-box {
     display: flex;
     justify-content: center;
@@ -11,18 +29,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-transform: uppercase;
 
     &--main {
         font-weight: 400;
         font-size: 5rem;
-        letter-spacing: 1.5rem;
         display: inline-block;
         background-color: $dirty-white;
         padding: 0 3rem;
         box-shadow: 0 0 2rem $shadow-2;
         z-index: 2;
-        border-radius: 1rem;
+        border-radius: 3px;
     }
 
     &--sub {
@@ -30,15 +46,15 @@
         top: -1rem;
         left: -2rem;
         display: inline-block;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 6rem;
+        font-family: 'NGBoldItalic', sans-serif;
+        font-size: 8rem;
         color: $dirty-white;
         letter-spacing: 1.5px;
-        padding: 1rem 4rem;
+        padding: 0 4rem;
         box-shadow: 0 0 2rem $shadow-2;
-        text-shadow: 0 0 .7rem $shadow-6;
+        text-shadow: 0 0 1rem $shadow-2;
         background-image: $green-gradient;
-        border-radius: 1rem;
+        border-radius: 3px;
 
         &::before {
             content: "";
@@ -48,11 +64,37 @@
             position: absolute;
             top: 2rem;
             left: 2rem;
-            // z-index: 1;
-            // border: 1px dashed red;
             background-image: inherit;
             z-index: -1;
-            border-radius: 1rem;
+            border-radius: 3px;
+            box-shadow: 0 0 2rem $shadow-2;
         }
+    }
+}
+
+
+.secondary-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 6rem;
+    font-family: 'NGBoldItalic', sans-serif;
+    color: $white;
+    text-shadow: 0 0 1rem $shadow-2;
+    padding: 0 3rem;
+    background-image: $green-gradient;
+    box-shadow: 0 1rem 2rem $shadow-2;
+    border-radius: 3px;
+}
+
+.tertiary-heading {
+    font-family: 'NGRegular', sans-serif;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    text-align: justify;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
     }
 }

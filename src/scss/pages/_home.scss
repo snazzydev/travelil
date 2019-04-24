@@ -1,0 +1,29 @@
+// ABOUT SECTION
+
+.about-section {
+    background-color: $dirty-white;
+    padding: 25rem 0;
+    margin-top: -20vh;
+
+    // * testing
+    // border: 3px solid red;
+}
+
+// FEATURES SECTION
+.features-section {
+    background-color: $dirty-white;
+    padding: 25rem 10rem;
+    background-image:
+        linear-gradient(to right bottom,
+        rgba($color-2, .7),
+        rgba($color-3, .9)),
+        url('../img/feature-bg.jpg');
+    background-size: cover;
+    background-position: center;
+
+    // Media Queries
+    @include respond(media-sm) {
+        padding: 25rem 0;
+    }
+
+}

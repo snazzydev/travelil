@@ -10,12 +10,15 @@ $grey-text: #646464;
 $text: #4e4a67;
 
 // PALLETTE
-$color-green-1: #43e97b;
-$color-green-2: #96e6a1;
 
 $color-orange-1: #f6d365;
 $color-orange-2: #fda085;
 
+$color-1: #CFF4D2;
+$color-2: #7BE495;
+$color-3: #56C596;
+$color-4: #329D9C;
+$color-5: #205072;
 // SHADOWS
 $shadow-1: rgba(0, 0, 0, 0.1);
 $shadow-2: rgba(0, 0, 0, 0.2);
@@ -24,14 +27,9 @@ $shadow-6: rgba(0, 0, 0, 0.6);
 $shadow-8: rgba(0, 0, 0, 0.8);
 
 // FONTS
-$default-text-size: 1.6rem;
+$default-text-size: 1.8rem;
 
 
 // GRADIENTS
-$green-gradient: linear-gradient(to right bottom,
-rgba($color-green-1, 1),
-rgba($color-green-2, 1));
-
-$orange-gradient: linear-gradient(to right bottom,
-rgba($color-orange-1, 1),
-rgba($color-orange-2, 1));
+$green-gradient: linear-gradient(147deg, $color-2, $color-3);
+$orange-gradient: linear-gradient(147deg, $color-orange-1, $color-orange-2);
