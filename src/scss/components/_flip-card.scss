@@ -1,0 +1,178 @@
+.card {
+    perspective: 150rem;
+    position: relative;
+    height: 47rem;
+
+    &__side {
+        height: 47rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        transition: all .7s ease;
+        box-shadow: 0 1rem 3rem $shadow-2;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        &--front {
+            background-color: #fff;
+        }
+
+        &--back {
+            transform: rotateY(-180deg);
+
+            &-1 {
+                background-image: $green-gradient;
+            }
+
+            &-2 {
+                background-image: $blue-gradient;
+            }
+
+            &-3 {
+                background-image: $green-gradient;
+            }
+
+            &-4 {
+                background-image: $blue-gradient;
+            }
+        }
+    }
+
+    // HOVER ACTIONS
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLES
+    &__picture {
+        background-size: cover;
+        height: 25rem;
+        background-blend-mode: screen;
+        clip-path: circle(80% at 20% -3%);
+
+        &--1 {
+            background-image: linear-gradient(to bottom,
+                $color-2,
+                rgba($color-2, .4)),
+                url('../img/serbia-bg.jpg');
+        }
+
+        &--2 {
+            background-image: linear-gradient(to bottom,
+                $color-blue-1,
+                rgba($color-blue-2, .4)),
+                url('../img/south-korea-bg.jpg');
+        }
+
+        &--3 {
+            background-image: linear-gradient(to bottom,
+                $color-2,
+                rgba($color-2, .4)),
+                url('../img/japan-bg.jpg');
+        }
+
+        &--4 {
+            background-image: linear-gradient(to bottom,
+                $color-blue-1,
+                rgba($color-blue-2, .4)),
+                url('../img/singapore-bg.jpg');
+        }
+    }
+
+    &__heading {
+        font-size: 3rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: right;
+        color: $white;
+        position: absolute;
+        top: 3rem;
+        border-radius: 3px;
+        right: 2rem;
+        transform: rotate(3deg);
+    }
+
+    &__heading-span {
+        padding: 1rem 1.5rem;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-3, .8),
+                rgba($color-2, .7));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-blue-1, .8),
+                rgba($color-blue-2, .7));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-3, .8),
+                rgba($color-2, .7));
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom,
+                rgba($color-blue-1, .8),
+                rgba($color-blue-2, .7));
+        }
+    }
+
+    &__details {
+        text-align: justify;
+        padding: 3rem 4rem 0 4rem;
+    }
+
+    &__rating {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 15rem;
+        right: 1rem;
+
+
+        &--p1 {
+            height: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        &--p2 {
+            height: 1.3rem;
+        }
+    }
+
+
+    &__cta {
+        @include absCentering;
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        color: $white;
+    }
+
+    &__price-only {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+}

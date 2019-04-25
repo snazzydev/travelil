@@ -11,14 +11,21 @@ $text: #4e4a67;
 
 // PALLETTE
 
-$color-orange-1: #f6d365;
-$color-orange-2: #fda085;
+$color-orange-1: #fc6076;
+$color-orange-2: #ff9a44;
+
+$color-blue-1: #0acffe;
+$color-blue-2: #495aff;
+
+$color-purple-1: #667eea;
+$color-purple-2: #764ba2;
 
 $color-1: #CFF4D2;
 $color-2: #7BE495;
 $color-3: #56C596;
 $color-4: #329D9C;
 $color-5: #205072;
+$color-6: #4EFFBB;
 // SHADOWS
 $shadow-1: rgba(0, 0, 0, 0.1);
 $shadow-2: rgba(0, 0, 0, 0.2);
@@ -29,7 +36,8 @@ $shadow-8: rgba(0, 0, 0, 0.8);
 // FONTS
 $default-text-size: 1.8rem;
 
-
 // GRADIENTS
 $green-gradient: linear-gradient(147deg, $color-2, $color-3);
-$orange-gradient: linear-gradient(147deg, $color-orange-2, $color-orange-1);
+$orange-gradient: linear-gradient(147deg, $color-orange-1, $color-orange-2);
+$blue-gradient: linear-gradient(147deg, $color-blue-1, $color-blue-2);
+$purple-gradient: linear-gradient(147deg, $color-purple-1, $color-purple-2);

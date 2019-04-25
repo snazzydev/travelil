@@ -1,4 +1,4 @@
-// Margin Bottom
+// Margins
 
 .u-margin-botom-2 {
     margin-bottom: 2rem;
@@ -20,6 +20,15 @@
     margin-bottom: 10rem;
 }
 
+// Text Align
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
 // Padding
 
 .p-r-3 {
@@ -36,6 +45,11 @@
 .row {
     margin-bottom: 6rem;
 }
+
+[class^='col'] {
+    margin-bottom: 2rem;
+}
+
 
 .box {
     height: 100%;

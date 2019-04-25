@@ -7,6 +7,7 @@
         color: $text;
         letter-spacing: 1px;
         text-decoration: none;
+        text-transform: uppercase;
         border: 2px solid $text;
         background-color: transparent;
         padding: 1rem 2rem;
@@ -26,5 +27,101 @@
     &:active {
         box-shadow: 0 1rem 2rem $shadow-2;
         transform: translateY(-1px);
+    }
+}
+
+// HOVER BUTTON
+
+.hover-btn {
+
+    &:link,
+    &:visited {
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: $dirty-white;
+        color: $text;
+        border-radius: 100rem;
+        padding: 1.5rem 6rem;
+        letter-spacing: 1.5px;
+        transition: all .3s;
+        position: relative;
+        box-shadow: 0 1rem 2rem $shadow-2;
+    }
+
+    &:hover {
+        box-shadow: 0 1rem 3rem $shadow-2;
+        transform: translateY(-5px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem $shadow-2;
+        transform: translateY(-2px);
+    }
+
+    // HOVER ANIMATION
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        background-color: $dirty-white;
+        border-radius: 100rem;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .3s;
+    }
+
+    &:hover::after {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+// PLAY BUTTON
+.play-btn {
+    border-radius: 100rem;
+    height: 16rem;
+    width: 16rem;
+    background-color: $color-6;
+    background-image: $green-gradient;
+    position: relative;
+    backface-visibility: hidden;
+    transition: scale .3s;
+    box-shadow: 0 1rem 3rem $shadow-4;
+
+    @include flexCenter;
+
+    &__icon {
+        font-size: 6rem;
+        color: $dirty-white;
+        text-shadow: .3rem .3rem 1rem $shadow-4;
+        padding-left: 1rem;
+        backface-visibility: hidden;
+    }
+
+    &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        border-radius: 100rem;
+        background-color: $color-6;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .2s;
+        z-index: -1;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    &:hover::after {
+        transform: scale(1.5);
+        opacity: 0;
     }
 }

@@ -10,8 +10,7 @@
 
 // FEATURES SECTION
 .features-section {
-    background-color: $dirty-white;
-    padding: 25rem 10rem;
+    padding: 30rem 10rem 20rem 10rem;
     background-image:
         linear-gradient(to right bottom,
         rgba($color-2, .7),
@@ -19,6 +18,24 @@
         url('../img/feature-bg.jpg');
     background-size: cover;
     background-position: center;
+    transform: skewY(-7deg);
+    margin-top: -11rem;
+
+    &>* {
+        transform: skewY(7deg);
+    }
+
+    // Media Queries
+    @include respond(media-sm) {
+        padding: 25rem 0;
+    }
+}
+
+// TOURS SECTION
+.tours-section {
+    background-color: $dirty-white;
+    padding: 30rem 10rem 10rem 10rem;
+    margin-top: -11rem;
 
     // Media Queries
     @include respond(media-sm) {
@@ -29,10 +46,17 @@
 // TESTIMONIAL SECTION
 .testimonial-section {
     padding: 10rem 0;
+    background-color: $dark-grey;
     background-image:
         linear-gradient(to right bottom,
-        rgba($color-2, .7),
-        rgba($color-orange-2, .9)),
+        rgba($color-3, .7),
+        rgba($dark-grey, .9)),
         url('../img/stories-bg.jpg');
     background-size: cover;
+}
+
+// CONTACT SECTION
+.contact-section {
+    padding: 50rem 0;
+    background-image: $green-gradient;
 }
