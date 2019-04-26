@@ -34,6 +34,7 @@
 
 .hover-btn {
 
+    &,
     &:link,
     &:visited {
         font-size: 2rem;
@@ -47,6 +48,10 @@
         transition: all .3s;
         position: relative;
         box-shadow: 0 1rem 2rem $shadow-2;
+
+        // <button> element
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -82,17 +87,27 @@
 
 // PLAY BUTTON
 .play-btn {
-    border-radius: 100rem;
-    height: 16rem;
-    width: 16rem;
-    background-color: $color-6;
-    background-image: $green-gradient;
-    position: relative;
-    backface-visibility: hidden;
-    transition: scale .3s;
-    box-shadow: 0 1rem 3rem $shadow-4;
 
-    @include flexCenter;
+    &:link,
+    &:visited {
+        border-radius: 100rem;
+        height: 16rem;
+        width: 16rem;
+        background-color: $color-6;
+        background-image: $green-gradient;
+        position: relative;
+        backface-visibility: hidden;
+        transition: scale .3s;
+        box-shadow: 0 1rem 3rem $shadow-4;
+        text-decoration: none;
+        @include flexCenter;
+    }
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
 
     &__icon {
         font-size: 6rem;
@@ -115,13 +130,51 @@
         z-index: -1;
     }
 
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-    }
+
 
     &:hover::after {
         transform: scale(1.5);
         opacity: 0;
+    }
+}
+
+// button
+
+.green-btn {
+
+    &,
+    &:link,
+    &:visited {
+        font-size: 1.8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: $color-3;
+        border-radius: .5rem;
+        border: 3px solid $color-3;
+        padding: 1.5rem 6rem;
+        letter-spacing: 1.5px;
+        transition: all .3s;
+        position: relative;
+        box-shadow: 0 1rem 2rem $shadow-2;
+        // border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        background-color: $color-3;
+        color: $dirty-white;
+        box-shadow: 0 2rem 3rem $shadow-4;
+    }
+
+    &:active {
+        outline: none;
+        transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem $shadow-2;
+    }
+
+    &:focus {
+        outline: none;
     }
 }

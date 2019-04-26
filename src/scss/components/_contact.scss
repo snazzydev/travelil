@@ -1,0 +1,117 @@
+.test {
+    background-color: $dark-grey;
+    border-radius: 5px;
+    // height: 40rem;
+    box-shadow: 0 1rem 3rem $shadow-4;
+}
+
+
+.contact {
+    @extend .test;
+
+    &__form {
+        width: 80%;
+        padding: 6rem;
+    }
+}
+
+
+.form {
+
+    &__group {
+
+        margin-bottom: 2rem;
+    }
+
+    &__input {
+        font-size: 1.8rem;
+        color: $dirty-white;
+        letter-spacing: 1px;
+        font-family: inherit;
+        padding: 1.5rem 2rem;
+        // border-radius: 2px;
+        background-color: rgba($grey-text, .2);
+        border: none;
+        border-bottom: 3px solid transparent;
+        transition: all .2s;
+        display: block;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem $shadow-2;
+            border-bottom: 3px solid $color-2;
+        }
+
+        &:focus:invalid {
+            border-bottom: 3px solid $color-orange-2;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $grey-text;
+        }
+
+        &--text {
+            height: 15rem;
+            resize: none;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__label {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-left: 2.1rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-5rem);
+    }
+}
+
+
+.mail {
+    @extend .test;
+    margin-left: -15rem;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        @extend .feature-box__icon;
+        font-size: 18rem;
+    }
+
+    &__social-box {
+        margin: -3rem 0 5rem 0;
+    }
+
+    &__link {
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+            cursor: pointer;
+        }
+    }
+
+    &__social-icon {
+        @extend .feature-box__icon;
+        font-size: 4rem;
+    }
+}

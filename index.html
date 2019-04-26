@@ -12,7 +12,10 @@
     <!-- Icon Font -->
     <link rel="stylesheet" href="assets/css/icon-font.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles-all-min.css" />
     <title>Travelus | Your One Stop Travel Guide</title>
 </head>
@@ -43,17 +46,16 @@
         </div>
     </header><!-- Header END -->
 
-
     <main>
         <!-- ABOUT SECTION -->
         <section class="about-section">
 
             <div class="container">
-                <h2 class="secondary-heading u-margin-botom-4">
+                <h2 class="secondary-heading u-margin-botom-4" data-aos="fade-up" data-aos-once>
                     Discover
                 </h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up">
                         <h3 class="tertiary-heading u-margin-botom-2">
                             Your individual tastes are unique, just like you.
                         </h3>
@@ -78,7 +80,7 @@
 
 
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left">
                         <div class="img-comp">
                             <img src="assets/img/img-outdoors-2.jpg" alt="Image 1" class="img-comp__photo img-comp__photo--p1">
                             <img src="assets/img/img-outdoors-3.jpg" alt="Image 2" class="img-comp__photo img-comp__photo--p2">
@@ -156,16 +158,14 @@
         <!-- TOURS SECTION -->
         <section class="tours-section" id="tours-section">
 
-            <div class="u-text-right u-margin-botom-8">
+            <div class="u-text-right u-margin-botom-8" data-aos="fade-left">
                 <h2 class="secondary-heading">
                     Popular Destinations
                 </h2>
             </div>
 
-
             <div class="container-fluid">
-                <div class="row">
-
+                <div class="row" data-aos="fade-up">
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -208,7 +208,7 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading-span card__heading-span--2">
-                                        south korea
+                                        South Korea
                                     </span>
                                 </h4>
                                 <div class="card__details">
@@ -309,7 +309,6 @@
                     <a href="#" class="btn">explore all tours</a>
                 </div>
             </div>
-
         </section>
 
         <!-- TESTIMONIAL SECTION -->
@@ -317,7 +316,7 @@
 
             <div class="container">
 
-                <div class="u-text-right">
+                <div class="u-text-right" data-aos="fade-right">
                     <h2 class="secondary-heading u-margin-botom-8">
                         We are happy when you are happy
                     </h2>
@@ -325,7 +324,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="story">
+                        <div class="story" data-aos="fade-left">
                             <div class="story__shape">
                                 <img src="assets/img/client-1.jpg" alt="Person on a tour" class="story__img">
                             </div>
@@ -346,7 +345,7 @@
 
                 <div class="row">
                     <div class="col-md-6 offset-md-6">
-                        <div class="story">
+                        <div class="story" data-aos="fade-right">
                             <div class="story__shape">
                                 <img src="assets/img/client-2.jpg" alt="Person on a tour" class="story__img">
                             </div>
@@ -367,7 +366,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="story">
+                        <div class="story" data-aos="fade-left">
                             <div class="story__shape">
                                 <img src="assets/img/client-3.jpg" alt="Person on a tour" class="story__img">
                             </div>
@@ -384,19 +383,113 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </section>
 
         <!-- CONTACT SECTION -->
         <section class="contact-section">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="contact" data-aos="fade-left">
+                            <div class="contact__form">
+                                <form action="#" class="form">
+
+                                    <h2 class="secondary-heading u-margin-botom-4">
+                                        Contact Us
+                                    </h2>
+
+                                    <div class="form__group">
+                                        <input id="name" type="text" class="form__input" placeholder="Full Name" autocomplete="off"
+                                            required>
+                                        <label for="name" class="form__label">Full Name</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <input id="email" type="email" class="form__input" placeholder="Email Address" autocomplete="off"
+                                            required>
+                                        <label for="email" class="form__label">Email Address</label>
+                                    </div>
+
+                                    <div class="form__group">
+                                        <textarea id="message" type="text" class="form__input form__input--text" placeholder="Your Message"
+                                            autocomplete="off" required>
+                                        </textarea>
+                                    </div>
+
+                                    <button class="green-btn">Submit</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mail" data-aos="fade-right">
+                            <i class="mail__icon icon-basic-mail-open-text"></i>
+                            <div class="mail__social-box">
+                                <a href="#" class="mail__link">
+                                    <i class="fab fa-facebook-f mail__social-icon"></i>
+                                </a>
+
+                                <a href="#" class="mail__link">
+                                    <i class="fab fa-instagram mail__social-icon"></i>
+                                </a>
+
+                                <a href="#" class="mail__link">
+                                    <i class="fab fa-twitter mail__social-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
+
+        <div class="footer__logo-box">
+            <img src="assets/img/travelil-logo.svg" alt="Travelus Logo" class="footer__logo">
+            <h2 class="logo-box__brand">
+                travelus
+            </h2>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Company</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Careers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Privacy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <p class="footer__copyright">
+                        Built by <a href="http://snazzy.dev" class='footer__link'>Ninoslav Stankovic</a>. Copyright &copy; 2019
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
@@ -420,9 +513,9 @@
 
             </div>
             <div class="popup__right">
-                <div class="play-btn">
+                <a href="#video-popup" class="play-btn">
                     <i class="fas fa-play play-btn__icon"></i>
-                </div>
+                </a>
 
                 <a href="#section-tours" class="popup__close">
                     <i class="fas fa-times"></i>
@@ -431,23 +524,43 @@
         </div>
     </div>
 
+    <!-- VIDEO MODAL -->
+    <div class="video-popup" id="video-popup">
+        <a href="#media-popup" class="video-popup__close">
+            <i class="fas fa-times"></i>
+        </a>
+        <div class="video-popup__content">
+            <video class="video-popup__video" show controls>
+                <source src="assets/img/serbia-video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 800,
+            once: true
+        });
 
+        var video = document.querySelector('.video-popup__video');
+        var playBtn = document.querySelector('.play-btn');
+        var close = document.querySelector('.video-popup__close');
 
+        playBtn.addEventListener('click', playVid);
+        close.addEventListener('click', stopVid);
 
+        function playVid() {
+            video.play();
+        }
 
-
-
-
-
-
-
-
-
-
-
-
+        function stopVid() {
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
 </body>
 
 </html>
