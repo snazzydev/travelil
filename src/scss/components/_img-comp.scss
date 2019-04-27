@@ -4,6 +4,7 @@
 
     @include respond(media-sm) {
         margin: 0;
+        display: none;
     }
 
     &__photo {
@@ -24,6 +25,10 @@
         &--p2 {
             top: 0;
             right: -10rem;
+
+            @include respond(media-sm) {
+                right: 5rem;
+            }
         }
 
         &--p3 {

@@ -39,6 +39,10 @@
         box-shadow: 0 0 2rem $shadow-2;
         z-index: 2;
         border-radius: 3px;
+
+        @include respond(media-sm) {
+            font-size: 2.5rem;
+        }
     }
 
     &--sub {
@@ -56,6 +60,10 @@
         background-image: $green-gradient;
         border-radius: 3px;
 
+        @include respond(media-sm) {
+            font-size: 3.5rem;
+        }
+
         &::before {
             content: "";
             display: inline-block;
@@ -72,7 +80,6 @@
     }
 }
 
-
 .secondary-heading {
     position: relative;
     display: inline-block;
@@ -85,8 +92,8 @@
     box-shadow: 0 1rem 2rem $shadow-2;
     border-radius: 3px;
 
-    &--orange {
-        background-image: $orange-gradient;
+    @include respond(media-sm) {
+        font-size: 3rem;
     }
 }
 

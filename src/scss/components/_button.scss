@@ -52,6 +52,11 @@
         // <button> element
         border: none;
         cursor: pointer;
+
+        @include respond(media-sm) {
+            font-size: 1.5rem;
+            padding: 1.2rem 5rem;
+        }
     }
 
     &:hover {
@@ -101,6 +106,11 @@
         box-shadow: 0 1rem 3rem $shadow-4;
         text-decoration: none;
         @include flexCenter;
+
+        @include respond(media-sm) {
+            height: 10rem;
+            width: 10rem;
+        }
     }
 
     &:hover {
@@ -115,6 +125,10 @@
         text-shadow: .3rem .3rem 1rem $shadow-4;
         padding-left: 1rem;
         backface-visibility: hidden;
+
+        @include respond(media-sm) {
+            font-size: 4rem;
+        }
     }
 
     &::after {

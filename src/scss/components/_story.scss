@@ -8,6 +8,10 @@
     transition: all .3s;
     backface-visibility: hidden;
 
+    @include respond(media-sm) {
+        padding: 4rem;
+    }
+
     &:hover {
         transform: translateX(2rem);
         transform: scale(1.05);
@@ -20,10 +24,16 @@
         top: 50%;
         left: -7rem;
         transform: translateY(-50%);
-        // clip-path: circle(50% at 50% 50%);
         border-radius: 50rem;
         transition: all .3s;
         backface-visibility: hidden;
+
+        @include respond(media-sm) {
+            height: 10rem;
+            width: 10rem;
+            top: 0;
+            left: 70%;
+        }
     }
 
     &__img {
@@ -36,9 +46,4 @@
     &__paragraph {
         text-align: justify;
     }
-
-    &:hover &__shape {
-        left: -8rem;
-    }
-
 }

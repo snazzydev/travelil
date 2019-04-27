@@ -16,8 +16,9 @@
         @include respond(media-sm) {
             margin: 0 auto;
             width: 95%;
-            text-align: center;
+            // text-align: center;
             padding: 3rem;
+            text-align: center;
         }
     }
 }
@@ -27,6 +28,7 @@
 
     &__group {
         margin-bottom: 2rem;
+        text-align: left;
     }
 
     &__input {
@@ -89,6 +91,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include respond(media-sm) {
+        margin: 0 auto;
+    }
 
     &__icon {
         @extend .feature-box__icon;
