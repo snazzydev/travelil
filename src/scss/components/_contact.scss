@@ -12,6 +12,13 @@
     &__form {
         width: 80%;
         padding: 6rem;
+
+        @include respond(media-sm) {
+            margin: 0 auto;
+            width: 95%;
+            text-align: center;
+            padding: 3rem;
+        }
     }
 }
 
@@ -19,7 +26,6 @@
 .form {
 
     &__group {
-
         margin-bottom: 2rem;
     }
 
